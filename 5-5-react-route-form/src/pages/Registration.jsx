@@ -90,11 +90,12 @@ export default function Registration() {
               onChange={(e) => setGender(e.target.value)}
             /> Female
           </label>
+          {errors.gender && <p className="error">{errors.gender}</p>}
         </fieldset>
 
           {/*Disable the submit button until all requirements met*/}
 
-        <button type="submit" className="btn" disabled={!email || !password || !gender}>Register</button>
+        <button type="submit" className="btn" >Register</button>
       </form>
 
       <div className="card info">
