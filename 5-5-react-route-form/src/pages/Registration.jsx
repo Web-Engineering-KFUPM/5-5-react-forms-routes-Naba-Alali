@@ -15,7 +15,7 @@ export default function Registration() {
       // Email validation
       if (!email.trim()) nextErrors.email = "Email is required";
       else if (!(email.includes("@") && email.endsWith(".com")))
-        nextErrors.email = "Enter a valid email address";
+        nextErrors.email = "Please enter a valid email address";
       // Password validation
       if (!password.trim()) nextErrors.password = "Password is required";
 
